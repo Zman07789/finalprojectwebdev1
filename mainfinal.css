@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Add space between the border of the body and the content */
+    padding: 0;
+    position: relative;
+}
+
+.background {
+    background-color: #F69480;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Ensure the background stays behind other content */
+}
+
+.foreground {
+    background-color: #f8f8f8;
+    width: calc(100vw - 40px); /* Adjusted width to account for margin */
+    height: 100vh;
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Added padding for space within the content */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.candy-cane-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #d32f2f 45%, #fff 55%);
+    background-size: 40px;
+    background-position: 0 0;
+    border-radius: 10px;
+}
+
+.candy-cane-nav a {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.candy-cane-nav a:hover {
+    color: #d32f2f;
+}
+
+.pennywise-image img,
+.floating-left img,
+.floating-right img {
+    width: 350px; /* Set max-width to 350px */
+    height: 350px; /* Set height to 350px */
+}
+
+.pennywise-image {
+    position: absolute;
+    top: 200px; /* Adjusted top position */
+    right: 200px; /* Adjusted right position */
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.text-wrap {
+    display: flex;
+}
+
+.floating-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.floating-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #d32f2f;
+}
